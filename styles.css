@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #D6C4ED; /* Background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+header .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Main content styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #F7F7F7;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box p, .box ul {
+    font-size: 14px;
+    color: #555;
+}
+
+.box ul {
+    padding-left: 20px;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+/* Apply button styles */
+.apply-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #9574D4;
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Image gallery styles */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.images img {
+    flex: 1 1 calc(25% - 10px);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* Creators section styles */
+.creators {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.creators h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.creators .profile-pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.creators .profile-pics img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .box {
+        flex: 1 1 100%;
+    }
+
+    .images img {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .creators .profile-pics img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+}
